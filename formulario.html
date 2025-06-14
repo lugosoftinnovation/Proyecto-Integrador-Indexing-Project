@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Indexing Project | Formación financiera práctica y cursos online para transformar tu vida financiera.">
+  <meta name="author" content="Indexing Project">
+  <meta name="robots" content="index, follow">
+  <title>Indexing Project | Formación Financiera</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="formulario.css">
+
+  <!-- Bootstrap y FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- Header principal -->
+<header class="bg-primary text-white py-4">
+  <div class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="logo mb-3 mb-md-0">
+        <img src="imagenes/LOGO INDEXING PROJECT 2025.png" alt="Logo Indexing Project" class="img-fluid" style="max-width: 150px;">
+      </div>
+      <div>
+        <h1 class="text-md-end m-0">Cursos de Formación Financiera</h1>
+        <p class="lead text-md-end mb-0">Proyectos Financieros de Vida</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Navegación -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html" target="_blank">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="quienessomos.html" target="_blank">Quienes somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="diagrama.html" target="_blank">Diagrama</a></li>
+        <li class="nav-item"><a class="nav-link" href="logica.html" target="_blank">Lógica</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactos.html" target="_blank">Contactos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner visual -->
+<section class="banner text-center">
+  <img src="imagenes/Formulario.jpg" alt="Banner Indexing Project" class="img-fluid">
+</section>
+
+<!-- Contenido principal -->
+<main class="container py-5">
+
+  <!-- Formulario Cliente -->
+  <section class="mb-5">
+    <h2 class="text-primary fw-bold mb-4">Formulario de Cliente</h2>
+
+    <form action="#" method="post">
+      <div class="mb-3">
+        <label for="nombreCompleto" class="form-label">Nombre completo</label>
+        <input type="text" id="nombreCompleto" name="nombrec" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="documento" class="form-label">Número documento/NIT</label>
+        <input type="text" id="documento" name="nit" class="form-control" pattern="[0-9]{8,10}" placeholder="8 a 10 dígitos" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Número móvil</label>
+        <input type="tel" id="telefono" name="telefono" class="form-control" pattern="[0-9]{10}" placeholder="10 dígitos" required>
+      </div>
+
+      <!-- Botones CRUD -->
+      <div class="botones-crud">
+        <button type="button" class="btn-crear">Crear</button>
+        <button type="button" class="btn-leer">Leer</button>
+        <button type="button" class="btn-actualizar">Actualizar</button>
+        <button type="button" class="btn-eliminar">Eliminar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Formulario Curso -->
+  <section>
+    <h2 class="text-primary fw-bold mb-4">Formulario de Curso de Formación</h2>
+
+    <form action="#" method="post">
+      <div class="mb-3">
+        <label for="nombreCurso" class="form-label">Nombre de Curso</label>
+        <input type="text" id="nombreCurso" name="curso" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="planEstudio" class="form-label">Tipo de plan de estudio</label>
+        <input type="text" id="planEstudio" name="modelo" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="horario" class="form-label">Horario</label>
+        <input type="text" id="horario" name="tipo" class="form-control" required>
+      </div>
+
+      <!-- Botones CRUD -->
+      <div class="botones-crud">
+        <button type="button" class="btn-crear">Crear</button>
+        <button type="button" class="btn-leer">Leer</button>
+        <button type="button" class="btn-actualizar">Actualizar</button>
+        <button type="button" class="btn-eliminar">Eliminar</button>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+  <!-- Footer actualizado para Indexing Project -->
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="h5 mb-3">Acerca de Nosotros</h3>
+        <p>Indexing Project es una plataforma líder en formación financiera, comprometida con la excelencia educativa y la satisfacción de nuestros estudiantes.</p>
+        <p class="mt-2"><a href="politica-privacidad.html" class="text-white-50 text-decoration-none">Tratamiento de datos</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="h5 mb-3">Enlaces Rápidos</h3>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+          <li class="mb-2"><a href="quienessomos.html" class="text-white-50 text-decoration-none">Quiénes Somos</a></li>
+          <li class="mb-2"><a href="contactos.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+          <li class="mb-2"><a href="diagrama.html" class="text-white-50 text-decoration-none">Diagrama</a></li>
+          <li class="mb-2"><a href="logica.html" class="text-white-50 text-decoration-none">Logica</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="h5 mb-3">Contacto</h3>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Edificio Milla de Oro Torre 1 Piso 15<br>Medellín - Colombia</p>
+        <p><i class="fas fa-phone me-2"></i> +57 322 395 89 85</p>
+        <p><i class="fas fa-envelope me-2"></i> infocursos@indexingproject.com</p>
+        
+        <div class="social-icons mt-3">
+          <a href="#" class="text-white me-2" aria-label="Facebook"><i class="fab fa-facebook fs-5"></i></a>
+          <a href="#" class="text-white me-2" aria-label="Twitter"><i class="fab fa-twitter fs-5"></i></a>
+          <a href="#" class="text-white me-2" aria-label="LinkedIn"><i class="fab fa-linkedin fs-5"></i></a>
+          <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fs-5"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright text-center mt-4 pt-3 border-top border-secondary">
+      <p class="mb-0">&copy; 2025 Indexing Project. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle con Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

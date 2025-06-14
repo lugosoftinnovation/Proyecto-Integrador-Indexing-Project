@@ -1,0 +1,148 @@
+/* Reset básico adicional */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.logo img {
+  max-height: 70px;
+}
+
+/* Navbar personalizado */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffc107 !important;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de sección */
+h2 {
+  font-weight: 700;
+  color: #0056b3;
+}
+
+/* Cards */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background: linear-gradient(90deg, #0069d9, #007bff);
+  text-align: center;
+  border-bottom: none;
+}
+
+.card-body img {
+  transition: transform 0.4s ease;
+}
+
+.card-body img:hover {
+  transform: scale(1.05);
+}
+
+.card-body p {
+  font-size: 0.95rem;
+}
+
+/* Botones personalizados */
+.btn-outline-primary {
+  border-radius: 50px;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ddd;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3 {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.footer-section p, 
+.footer-section li {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-section a:hover {
+  color: #ffc107;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    max-height: 60px;
+  }
+}

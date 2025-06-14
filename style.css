@@ -1,0 +1,214 @@
+/* Footer - Estilo profesional acorde al carrusel */
+footer {
+  background: linear-gradient(135deg, #1a1e21 0%, #2c3e50 100%);
+  color: white;
+  padding: 4rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid var(--primary-color);
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('imagenes/pattern-finance.png') repeat;
+  opacity: 0.03;
+  z-index: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section h3 {
+  color: var(--color-blanco);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--featured-color);
+}
+
+.footer-section p {
+  color: #ddd;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-section ul li a:hover {
+  color: var(--featured-color);
+  transform: translateX(5px);
+}
+
+.footer-section .social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-section .social-icons a {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+  background: var(--featured-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(3, 132, 238, 0.3);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.copyright a {
+  color: var(--featured-color);
+  text-decoration: none;
+}
+
+/* Efectos consistentes con el carrusel */
+.footer-section ul li a,
+.footer-section p,
+.copyright {
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  
+  .footer-section {
+    margin-bottom: 0;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 3rem 0 1.5rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .copyright {
+    font-size: 0.8rem;
+  }
+}
+
+/* Sección de Videos */
+.video-section {
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('imagenes/pattern-finance.png') repeat;
+  opacity: 0.03;
+  z-index: 0;
+}
+
+.video-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #000;
+}
+
+.video-card .card-body {
+  padding: 1.5rem;
+  background: white;
+}
+
+.video-card h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .video-card {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,230 @@
+/* ==========================
+   Variables Indexing Project
+========================== */
+:root {
+  --indx-blue-dark: #003366;
+  --indx-blue-primary: #0056b3;
+  --indx-blue-light: #0077cc;
+  --indx-accent: #ffd700;
+  --indx-gray-dark: #343a40;
+  --indx-gray-light: #f8f9fa;
+  --indx-white: #ffffff;
+  --indx-shadow: rgba(0, 86, 179, 0.15);
+}
+
+/* ==========================
+   Reset y base tipográfica
+========================== */
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--indx-gray-light);
+  color: var(--indx-gray-dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  color: var(--indx-blue-dark);
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ==========================
+   Header principal
+========================== */
+header.bg-primary {
+  background: linear-gradient(135deg, var(--indx-blue-dark), var(--indx-blue-primary)) !important;
+  border-bottom: 4px solid var(--indx-accent);
+}
+
+/* ==========================
+   Navbar
+========================== */
+.navbar-dark.bg-dark {
+  background-color: var(--indx-blue-dark) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--indx-accent) !important;
+}
+
+.nav-link.active {
+  color: var(--indx-accent) !important;
+  font-weight: 600;
+}
+
+/* ==========================
+   Botones
+========================== */
+.btn-outline-primary {
+  border-color: var(--indx-blue-primary);
+  color: var(--indx-blue-primary);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--indx-blue-primary);
+  color: var(--indx-white);
+}
+
+.btn-outline-success {
+  border-color: #28a745;
+  color: #28a745;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: var(--indx-white);
+}
+
+/* ==========================
+   Cards
+========================== */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--indx-white);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--indx-shadow);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px var(--indx-shadow);
+}
+
+.card-header {
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.card-header.bg-primary {
+  background-color: var(--indx-blue-primary) !important;
+  color: var(--indx-white);
+}
+
+.card-header.bg-secondary {
+  background-color: var(--indx-blue-dark) !important;
+  color: var(--indx-white);
+}
+
+/* ==========================
+   Acordeón
+========================== */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(0, 86, 179, 0.08);
+  color: var(--indx-blue-dark);
+  font-weight: 600;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 86, 179, 0.25);
+}
+
+.accordion-item {
+  border: 1px solid var(--indx-blue-primary);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* ==========================
+   Badges
+========================== */
+.badge.bg-primary {
+  background-color: var(--indx-blue-primary) !important;
+}
+
+.badge.bg-success {
+  background-color: #28a745 !important;
+}
+
+.badge.bg-warning {
+  background-color: var(--indx-accent) !important;
+  color: var(--indx-gray-dark);
+}
+
+/* ==========================
+   Imágenes
+========================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================
+   Íconos
+========================== */
+.fas, .fab {
+  transition: transform 0.3s ease;
+}
+
+.fas:hover, .fab:hover {
+  transform: scale(1.2);
+}
+
+/* ==========================
+   Footer
+========================== */
+footer.bg-dark {
+  background-color: var(--indx-blue-dark) !important;
+  border-top: 3px solid var(--indx-accent);
+  color: var(--indx-white);
+}
+
+footer a {
+  color: var(--indx-white);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--indx-accent);
+}
+
+/* ==========================
+   Animaciones
+========================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* ==========================
+   Responsive ajustes
+========================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,220 @@
+/* ===================================
+   Variables de color Indexing Project
+=================================== */
+:root {
+  --color-primario: #0d6efd;
+  --color-secundario: #0a4275;
+  --color-acento: #6ec1e4;
+  --color-texto: #333;
+  --color-fondo: #f4f8fb;
+  --color-footer: #0a2a43;
+  --color-blanco: #ffffff;
+}
+
+/* ===================================
+   Estilos generales
+=================================== */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================================
+   Header
+=================================== */
+header {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+/* Logo en header */
+.logo img {
+  max-width: 150px;
+}
+
+/* ===================================
+   Banner
+=================================== */
+.banner img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* ===================================
+   Navegación
+=================================== */
+.navbar {
+  background-color: #212529;
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #f8f9fa;
+}
+
+.nav-link:hover {
+  color: var(--color-acento);
+}
+
+/* ===================================
+   Títulos y Secciones
+=================================== */
+h2 {
+  border-left: 6px solid var(--color-primario);
+  padding-left: 12px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--color-secundario);
+}
+
+/* ===================================
+   Formularios
+=================================== */
+form {
+  background: var(--color-blanco);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--color-secundario);
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* ===================================
+   Botones CRUD
+=================================== */
+.botones-crud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.botones-crud button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--color-blanco);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-crear {
+  background-color: var(--color-primario);
+}
+
+.btn-leer {
+  background-color: var(--color-secundario);
+}
+
+.btn-actualizar {
+  background-color: var(--color-acento);
+}
+
+.btn-eliminar {
+  background-color: #34495e;
+}
+
+.botones-crud button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ===================================
+   Footer
+=================================== */
+footer {
+  background-color: var(--color-footer);
+  color: #ccc;
+  padding-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3 {
+  color: var(--color-blanco);
+  margin-bottom: 1rem;
+}
+
+footer p, footer li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--color-acento);
+}
+
+footer .social-icons a {
+  display: inline-block;
+  color: #ccc;
+  margin-right: 0.5rem;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: var(--color-acento);
+}
+
+.copyright {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #3d5a73;
+}
+
+/* ===================================
+   Responsive
+=================================== */
+@media (max-width: 767.98px) {
+  .banner img {
+    max-height: 200px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
